@@ -1,5 +1,5 @@
 #TODO Create an object version
-class Player():
+class Player :
     def __init__(self,name,game):
         self.name = name
         self.score = game
@@ -28,6 +28,9 @@ class Player():
         list_scores = list(map(parse_leg, list_scores))
         leg_score = sum(list_scores)
         self.score -= leg_score
+
+    def has_won(self):
+        return self.score==0
 
 
 

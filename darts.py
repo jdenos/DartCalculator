@@ -86,6 +86,8 @@ if __name__ == "__main__":
         if scores[player] == 0: #finally someone won
             print("\033[H\033[J") #cleen screen
             print(f"Congratulation {players[player]} you won!!!")
-            break
+            input("Enter to quit") #wait for people to clic
+            print("\033[H\033[J") #clean screen
+            break #exit the infinite loop
         print("\033[H\033[J") #clean screen
         player = (player + 1) % num_players # to start back to 0
